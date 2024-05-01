@@ -1,0 +1,47 @@
+/* Colour Pallete
+
+Flamingo = #F45C2C
+Tundora = #443C44
+Shingle Fawn = #744C38
+Hillary (Beige) = #B4A48C
+*/
+
+/* Global
+------------------------------------------*/
+body {
+    background-color: #636363;
+}
+
+h1 {
+    color: #F45C2C;
+    transform: translate(210px,-100px);
+    font-size: 50px;
+}
+
+ /* Table
+------------------------------------------*/
+
+td {
+    color: #B4A48C;
+}
+
+th {
+    color: #443C44;
+    font-size: larger;
+}
+
+a {
+    color: #B4A48C;
+    font-weight: bold;
+}
+
+table{
+    transform: translate(0,-100px);
+}
+
+/* Logo
+------------------------------------------*/
+.logo{
+    width:200px;
+    height: auto;
+}

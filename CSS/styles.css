@@ -12,9 +12,51 @@ body {
     background-color: #636363;
 }
 
- /* Table
+/* Logo
 ------------------------------------------*/
-@media (max-width: 800px) {
+.logo{
+    width:200px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Asset Register
+------------------------------------------*/
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+li a:hover {
+    background: #F45C2C;
+    color: #443C44;
+}
+
+/* Asset Register
+------------------------------------------*/
+
+.sub-heading {
+    font-size: 1.2em;
+    padding: 5px;
+    padding-left: 30px;
+    background-color: #443C44;
+    color: #F45C2C;
+    font-weight: bold;
+}
+
+ /* MSDS Register
+------------------------------------------*/
+@media (max-width: 500px) {
     table, tr, td {
         display: block;
     }
@@ -24,38 +66,47 @@ body {
     td:nth-child(1)::before {
         content: "Product: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(2)::before {
         content: "Manufacturer: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(3)::before {
         content: "Product Code: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(4)::before {
         content: "DG Class: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(5)::before {
         content: "Product Labbled: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(6)::before {
         content: "MSDS < 5 years: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(7)::before {
         content: "MSDS Issue Date: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(8)::before {
         content: "Storage Location: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     td:nth-child(9)::before {
         content: "Controls: ";
         font-weight: bold;
+        font-size: 1.2rem;
     }
     tbody tr:nth-child(even) {
         background-color: rgba(68, 60, 68, 0.5);
@@ -77,14 +128,18 @@ caption {
 td {
     color: #B4A48C;
     padding: 8px 15px;
-    
+}
+
+td:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 th {
     color: #443C44;
     font-size: 1.3rem;
     text-align: left;
-    padding: 12px 15px;
+    padding: 12px 35px;
     border-bottom: 2px solid #000;
 }
 
@@ -102,14 +157,6 @@ table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: 500px;
 }
 
-/* Logo
-------------------------------------------*/
-.logo{
-    width:200px;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
-}

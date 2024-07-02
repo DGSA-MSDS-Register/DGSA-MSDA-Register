@@ -33,8 +33,10 @@ ul {
 
 li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 2px 7px;
     font-weight: bold;
+    margin: 0px;
+    display: inline-block;
 }
 
 li a:hover {
@@ -56,7 +58,25 @@ li a:hover {
 
  /* MSDS Register
 ------------------------------------------*/
-/* @media (max-width: 500px) {
+
+@media (max-width: 500px) {
+    .logo {
+        width: 125px;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    caption {
+        color: #F45C2C;
+        font-size: 50px;
+        text-align: Center;
+    }
+}
+
+
+/* 
+@media (max-width: 500px) {
     table, tr, td {
         display: block;
     }
@@ -122,7 +142,7 @@ li a:hover {
 caption {
     color: #F45C2C;
     font-size: 50px;
-    text-align: center;
+    text-align: Center;
 }
 
 td {
@@ -141,6 +161,10 @@ th {
     text-align: left;
     padding: 12px 35px;
     border-bottom: 2px solid #000;
+}
+
+th:first-child {
+    padding: 12px 50px;
 }
 
 a {

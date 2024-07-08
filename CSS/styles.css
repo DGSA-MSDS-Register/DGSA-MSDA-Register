@@ -59,7 +59,7 @@ li a:hover {
  /* MSDS Register
 ------------------------------------------*/
 
-@media (max-width: 500px) {
+@media screen and (max-width: 520px) {
     .logo {
         width: 125px;
         height: auto;
@@ -68,14 +68,113 @@ li a:hover {
     }
 
     caption {
-        color: #F45C2C;
-        font-size: 50px;
-        text-align: Center;
+        font-size: 30px;
+        text-align: left;
+    }
+    td {
+        padding: 2px 9px;
+    }
+    
+    td:first-child {
+        font-size: 0.9rem;
     }
 }
 
+@media screen and (min-width: 521px) and (max-width: 750px) {
+    table caption {
+        font-size: 35px;
+        text-align: left;
+    }
+    td {
+        padding: 4px 11px;
+    }
+    
+    td:first-child {
+        font-size: 1rem;
+    }
+    th {
+        font-size: 1.1rem;
+        padding: 8px 31px;
+    }
+}
 
-/* 
+@media screen and (min-width: 651px) and (max-width: 1020px) {
+    table caption {
+        font-size: 45px;
+        text-align: left;
+    }
+    td {
+        padding: 6px 13px;
+    }
+    
+    td:first-child {
+        font-size: 1.1rem;
+    }
+    th {
+        font-size: 1.2rem;
+        padding: 10px 33px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    table caption {
+        font-size: 50px;
+        text-align: center;
+    }
+    td {
+        padding: 8px 15px;
+    }
+    
+    td:first-child {
+        font-size: 1.2rem;
+    }
+    th {
+        font-size: 1.3rem;
+        padding: 12px 35px;
+    }
+}
+
+caption {
+    color: #F45C2C;
+}
+
+td {
+    color: #B4A48C;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+th {
+    color: #443C44;
+    text-align: left;
+    border-bottom: 2px solid #000;
+}
+
+th:first-child {
+    padding: 12px 50px;
+}
+
+a {
+    color: #B4A48C;
+    font-weight: bold;
+}
+
+tbody {
+    border-bottom: 3px solid #000;
+}
+
+table {
+    transform: translate(0,0);
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 500px;
+}
+
+
+/* table media query
 @media (max-width: 500px) {
     table, tr, td {
         display: block;
@@ -139,48 +238,26 @@ li a:hover {
     }
 } */
 
-caption {
-    color: #F45C2C;
-    font-size: 50px;
-    text-align: Center;
+/* Redbower Prestart list
+------------------------------------------*/
+
+button {
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #443C44;
+    border: none;
+    padding: 5px;
 }
 
-td {
-    color: #B4A48C;
-    padding: 8px 15px;
+button a {
+    text-decoration: none;
+    padding: 5px;
 }
 
-td:first-child {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-th {
+a:hover {
     color: #443C44;
-    font-size: 1.3rem;
-    text-align: left;
-    padding: 12px 35px;
-    border-bottom: 2px solid #000;
 }
 
-th:first-child {
-    padding: 12px 50px;
+button:hover {
+    background-color: #B4A48C;
 }
-
-a {
-    color: #B4A48C;
-    font-weight: bold;
-}
-
-tbody {
-    border-bottom: 3px solid #000;
-}
-
-table {
-    transform: translate(0,0);
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 500px;
-}
-

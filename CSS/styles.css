@@ -247,6 +247,7 @@ button {
     background-color: #443C44;
     border: none;
     padding: 5px;
+    margin: 3px;
 }
 
 button a {

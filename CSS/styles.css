@@ -241,24 +241,82 @@ table {
 /* Redbower Prestart list
 ------------------------------------------*/
 
-button {
-    border-radius: 5px;
-    font-size: 20px;
+.bower {
+    margin: 5px;
+    width: 100%;
+}
+
+.bower ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bower a {
     background-color: #443C44;
-    border: none;
-    padding: 5px;
-    margin: 3px;
-}
-
-button a {
+    color: #B4A48C;
+    font-weight: bold;
+    display: block;
     text-decoration: none;
-    padding: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
-a:hover {
+.bower a:hover {
+    background-color:#B4A48C;
     color: #443C44;
 }
 
-button:hover {
-    background-color: #B4A48C;
+@media screen and (max-width: 630px) {
+    .bower ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .bower li {
+        margin: 5px;
+    }
+
+    .bower a {
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (min-width: 631px) and (max-width: 1279px) {
+    .bower ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .bower a {
+        border-radius: 15px;
+        font-size: 17px;
+        padding: 15px 10px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {  
+    .bower ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 17px;
+        row-gap: 17px;
+    }
+    
+    .bower a {
+        border-radius: 25px;
+        font-size: 22px;
+        padding: 40px 10px;
+    }
 }

@@ -15,37 +15,60 @@ body {
 /* Logo
 ------------------------------------------*/
 .logo{
+    position: static;
+    top: 20px;
     width:200px;
     height: auto;
     padding: 10px;
     margin: 10px;
 }
 
+
+
 /* Asset Register
 ------------------------------------------*/
 
-ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    margin: 0;
+caption {
+    color: #F45C2C;
 }
 
-li a {
-    text-decoration: none;
-    padding: 2px 7px;
+td {
+    color: #B4A48C;
+    text-align: center;
+}
+
+td:first-child {
     font-weight: bold;
-    margin: 0px;
-    display: inline-block;
+    text-align: left;
 }
 
-li a:hover {
-    background: #F45C2C;
+th {
     color: #443C44;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    background-color: RGBA(245, 245, 245, .9);
 }
 
-/* Asset Register
-------------------------------------------*/
+th:first-child {
+    padding: 12px 50px;
+}
+
+a {
+    color: #B4A48C;
+    font-weight: bold;
+}
+
+tbody {
+    border-bottom: 3px solid #000;
+}
+
+table {
+    transform: translate(0,0);
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 500px;
+}
 
 .sub-heading {
     font-size: 1.2em;
@@ -55,9 +78,6 @@ li a:hover {
     color: #F45C2C;
     font-weight: bold;
 }
-
- /* MSDS Register
-------------------------------------------*/
 
 @media screen and (max-width: 520px) {
     .logo {
@@ -77,6 +97,11 @@ li a:hover {
     
     td:first-child {
         font-size: 0.9rem;
+    }
+
+    th {
+        font-size: 1rem;
+        padding: 6px 29px;
     }
 }
 
@@ -134,44 +159,7 @@ li a:hover {
     }
 }
 
-caption {
-    color: #F45C2C;
-}
 
-td {
-    color: #B4A48C;
-}
-
-td:first-child {
-    font-weight: bold;
-}
-
-th {
-    color: #443C44;
-    text-align: left;
-    border-bottom: 2px solid #000;
-}
-
-th:first-child {
-    padding: 12px 50px;
-}
-
-a {
-    color: #B4A48C;
-    font-weight: bold;
-}
-
-tbody {
-    border-bottom: 3px solid #000;
-}
-
-table {
-    transform: translate(0,0);
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 500px;
-}
 
 
 /* table media query
@@ -237,6 +225,120 @@ table {
         transform: translate(0,100px)
     }
 } */
+
+/* Navbar
+------------------------------------------*/
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+    padding: 2px 7px;
+    font-weight: bold;
+    margin: 0px;
+    display: inline-block;
+}
+
+li a:hover {
+    background: #F45C2C;
+    color: #443C44;
+}
+
+.navbar a {
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: #443C44;
+}
+
+.navbar li {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 520px) {
+    .navbar li {
+        border-top: none;
+        border-bottom: none;
+        background-color: #443C44;
+        padding: 0;
+    }
+
+    .navbar li:hover {
+        background-color: #F45C2C;
+    }
+
+    .navbar ul {
+        display: inline-block;
+        align-items: center;
+        position: absolute;
+        right: 25px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 4px 4px;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 622px) {
+    .navbar li {
+        border-top: none;
+        border-bottom: none;
+        background-color: #443C44;
+    }
+
+    .navbar li:hover {
+        background-color: #F45C2C;
+    }
+
+    .navbar ul {
+        display: block;
+        align-items: center;
+        position: absolute;
+        right: 35px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (min-width: 623px) and (max-width: 719px) {
+    .navbar a {
+        font-size: 12px;
+        padding: 4px 4px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 919px) {
+    .navbar a {
+        font-size: 14px;
+        padding: 4px 5px;
+
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1149px) {
+    .navbar a {
+        font-size: 18px;
+        padding: 5px 7px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .navbar a {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+}
+
+
 
 /* Redbower Prestart list
 ------------------------------------------*/

@@ -343,6 +343,16 @@ li a:hover {
 /* Redbower Prestart list
 ------------------------------------------*/
 
+.bower span {
+    font-size: 13px;
+    color: #A08C6D;
+}
+
+.bower span::before {
+    content: "\a";
+    white-space: pre;
+}
+
 .bower {
     margin: 5px;
     width: 100%;

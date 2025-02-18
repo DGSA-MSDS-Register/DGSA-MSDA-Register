@@ -12,6 +12,9 @@ body {
     background-color: #636363;
 }
 
+h1 {
+    color: white;
+}
 
 .headsticky {
     position: sticky;

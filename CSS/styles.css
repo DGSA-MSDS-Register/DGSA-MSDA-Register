@@ -12,9 +12,6 @@ body {
     background-color: #636363;
 }
 
-h1 {
-    color: white;
-}
 
 .headsticky {
     position: sticky;
@@ -370,6 +367,10 @@ li a:hover {
 .bower {
     margin: 5px;
     width: 100%;
+}
+
+h1 {
+    color: white;
 }
 
 .bower ul {
